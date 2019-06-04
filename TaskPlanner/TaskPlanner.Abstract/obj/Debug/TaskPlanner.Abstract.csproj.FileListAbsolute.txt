@@ -1,0 +1,6 @@
+C:\Users\мукушева\source\repos\TaskPlanner\TaskPlanner.Abstract\bin\Debug\TaskPlanner.Abstract.dll
+C:\Users\мукушева\source\repos\TaskPlanner\TaskPlanner.Abstract\bin\Debug\TaskPlanner.Abstract.pdb
+C:\Users\мукушева\source\repos\TaskPlanner\TaskPlanner.Abstract\obj\Debug\TaskPlanner.Abstract.csprojAssemblyReference.cache
+C:\Users\мукушева\source\repos\TaskPlanner\TaskPlanner.Abstract\obj\Debug\TaskPlanner.Abstract.csproj.CoreCompileInputs.cache
+C:\Users\мукушева\source\repos\TaskPlanner\TaskPlanner.Abstract\obj\Debug\TaskPlanner.Abstract.dll
+C:\Users\мукушева\source\repos\TaskPlanner\TaskPlanner.Abstract\obj\Debug\TaskPlanner.Abstract.pdb

@@ -1,0 +1,9 @@
+C:\Users\мукушева\source\repos\TaskPlanner\TaskPlanner.Models\bin\Debug\TaskPlanner.Models.dll
+C:\Users\мукушева\source\repos\TaskPlanner\TaskPlanner.Models\bin\Debug\TaskPlanner.Models.pdb
+C:\Users\мукушева\source\repos\TaskPlanner\TaskPlanner.Models\bin\Debug\TaskPlanner.Abstract.dll
+C:\Users\мукушева\source\repos\TaskPlanner\TaskPlanner.Models\bin\Debug\TaskPlanner.Abstract.pdb
+C:\Users\мукушева\source\repos\TaskPlanner\TaskPlanner.Models\obj\Debug\TaskPlanner.Models.csprojAssemblyReference.cache
+C:\Users\мукушева\source\repos\TaskPlanner\TaskPlanner.Models\obj\Debug\TaskPlanner.Models.csproj.CoreCompileInputs.cache
+C:\Users\мукушева\source\repos\TaskPlanner\TaskPlanner.Models\obj\Debug\TaskPlanner.Models.csproj.CopyComplete
+C:\Users\мукушева\source\repos\TaskPlanner\TaskPlanner.Models\obj\Debug\TaskPlanner.Models.dll
+C:\Users\мукушева\source\repos\TaskPlanner\TaskPlanner.Models\obj\Debug\TaskPlanner.Models.pdb

@@ -1,0 +1,32 @@
+﻿<Window x:Class="TaskPlanner.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TaskPlanner"
+        mc:Ignorable="d"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Title="MainWindow" Height="450" Width="800">
+
+    <StackPanel>
+        <DatePicker Name="date" HorizontalAlignment="Center" Margin="20" Width="120"/>
+        <ComboBox Name="repeat" HorizontalAlignment="Center" Margin="20" Width="120" SelectionChanged="RepeatSelectionChanged" >
+            <ComboBoxItem Content="Одноразово"/>
+            <ComboBoxItem Content="Раз в неделю"/>
+            <ComboBoxItem Content="Раз в месяц"/>
+            <ComboBoxItem Content="Раз в год"/>
+        </ComboBox>
+        <ComboBox Name="operation" HorizontalAlignment="Center" Margin="20" Width="120" SelectionChanged="OperationSelectionChanged">
+            <ComboBoxItem Content="Эл. почта"/>
+            <ComboBoxItem Content="Скачать файл"/>
+            <ComboBoxItem Content="Переместить файл"/>
+        </ComboBox>
+        <TextBox x:Name="from"
+                    materialDesign:HintAssist.Hint="От"
+                    Style="{StaticResource MaterialDesignFloatingHintTextBox}" Margin="20" HorizontalAlignment="Center" Width="120"/>
+        <TextBox x:Name="to"
+            materialDesign:HintAssist.Hint="Куда"
+            Style="{StaticResource MaterialDesignFloatingHintTextBox}" Margin="20" HorizontalAlignment="Center" Width="120"/>
+        <Button Name="execute" Content="Запустить" Width="120" Margin="20" Click="Execute"></Button>
+    </StackPanel>
+</Window>
