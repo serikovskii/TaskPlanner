@@ -14,6 +14,8 @@
         {
         }
         public DbSet<TaskPlan> Tasks { get; set; }
-        //public DbSet<IOperationInit> Operations { get; set; }
+        public DbSet<Email> Emails { get; set; }
+        public DbSet<Download> Downloads { get; set; }
+        public DbSet<Move> Moves { get; set; }
     }
 }

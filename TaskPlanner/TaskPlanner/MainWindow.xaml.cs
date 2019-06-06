@@ -10,7 +10,7 @@ namespace TaskPlanner
 {
     public partial class MainWindow : Window
     {
-        private IOperationInit typeOperation;
+        private Guid operationId;
         private DateTime? repeatDate;
         public MainWindow()
         {
@@ -23,17 +23,52 @@ namespace TaskPlanner
             {
                 using (var context = new DataContext())
                 {
+                    
+                    switch (operation.SelectedIndex)
+                    {
+                        case 0:
+                            var email = new Email()
+                            {
+                                From = from.Text,
+                                To = to.Text
+                            };
+                            operationId = email.Id;
+                            context.Emails.Add(email);
+                            email.Execute(from.Text, to.Text);
+                            break;
+                        case 1:
+                            var download = new Download()
+                            {
+                                From = from.Text,
+                                To = to.Text
+                            };
+                            operationId = download.Id;
+                            context.Downloads.Add(download);
+                            break;
+                        case 2:
+                            var move = new Move()
+                            {
+                                From = from.Text,
+                                To = to.Text
+                            };
+                            operationId = move.Id;
+                            context.Moves.Add(move);
+                            break;
+                        default: MessageBox.Show("Введите корекктно"); break;
+                    }
                     var task = new TaskPlan()
                     {
                         Date = date.SelectedDate,
                         Repeat = repeatDate,
-                        TypeOperation = typeOperation
+                        OperationId = operationId
                     };
 
                     context.Tasks.Add(task);
                     context.SaveChanges();
-                }
 
+                    
+                }
+                
                 MessageBox.Show("Добавили");
             }
             else
@@ -71,25 +106,9 @@ namespace TaskPlanner
         {
             switch (operation.SelectedIndex)
             {
-                case 0:
-                    typeOperation = new Email()
-                    {
-                        From = from.Text,
-                        To = to.Text
-                    }; break;
-                case 1:
-                    typeOperation = new Download()
-                    {
-                        From = from.Text,
-                        To = to.Text
-                    }; break;
-                case 2:
-                    typeOperation = new Move()
-                    {
-                        From = from.Text,
-                        To = to.Text
-                    }; break;
-                default: MessageBox.Show("Введите корекктно"); break;
+                case 0: break; // проверка на адрес емайла  
+                case 1: break; // проверка адрес скачивания в дерикторию  
+                case 2: break; // проверка адрес директории в дерикторию  
             }
         }
 

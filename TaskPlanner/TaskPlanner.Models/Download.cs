@@ -7,13 +7,10 @@ using TaskPlanner.Abstract;
 
 namespace TaskPlanner.Models
 {
-    public class Download : IOperationInit
+    public class Download : Entity
     {
         public string From { get; set; }
         public string To { get; set; }
-        public void Execute(string from, string to)
-        {
-
-        }
+       
     }
 }

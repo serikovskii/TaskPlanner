@@ -18,3 +18,4 @@ C:\Users\мукушева\source\repos\TaskPlanner\TaskPlanner.DataAccess\obj\De
 C:\Users\мукушева\source\repos\TaskPlanner\TaskPlanner.DataAccess\obj\Debug\TaskPlanner.DataAccess.pdb
 C:\Users\мукушева\source\repos\TaskPlanner\TaskPlanner.DataAccess\obj\Debug\TaskPlanner.DataAccess.Migrations.InitialCreate.resources
 C:\Users\мукушева\source\repos\TaskPlanner\TaskPlanner.DataAccess\obj\Debug\TaskPlanner.DataAccess.csproj.GenerateResource.cache
+C:\Users\мукушева\source\repos\TaskPlanner\TaskPlanner.DataAccess\obj\Debug\TaskPlanner.DataAccess.Migrations.Init.resources
